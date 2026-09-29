@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logoIcon from "@/assets/logo-icon.png";
 
 export function Footer() {
   return (
@@ -7,9 +8,7 @@ export function Footer() {
       <div className="container-x grid gap-10 py-16 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3 text-white">
-            <div className="grid h-12 w-12 shrink-0 place-items-center rounded-md bg-[var(--gradient-accent)] font-display text-lg text-[oklch(0.17_0.008_20)]">
-              LR
-            </div>
+            <img src={logoIcon} alt="LibertyRose Solutions LLC logo" className="h-12 w-auto shrink-0 object-contain" />
             <div>
               <div className="font-display text-lg">LibertyRose Solutions LLC</div>
               <div className="text-[10px] uppercase tracking-[0.3em] text-white/60">Reliable Freight Solutions</div>

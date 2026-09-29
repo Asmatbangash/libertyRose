@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
+import logoIcon from "@/assets/logo-icon.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -16,9 +17,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[oklch(0.17_0.008_20/0.85)] backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3 text-white">
-          <div className="grid h-11 w-11 shrink-0 place-items-center rounded-md bg-[var(--gradient-accent)] font-display text-lg text-[oklch(0.17_0.008_20)]">
-            LR
-          </div>
+          <img src={logoIcon} alt="LibertyRose Solutions LLC logo" className="h-11 w-auto shrink-0 object-contain" />
           <div className="leading-tight">
             <div className="font-display text-lg tracking-wider">LibertyRose Solutions LLC</div>
             <div className="text-[10px] uppercase tracking-[0.3em] text-white/60">Reliable Freight Solutions</div>
